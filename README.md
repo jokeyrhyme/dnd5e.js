@@ -1,2 +1,3 @@
-# dnd5e.js
+# dnd5e.js [![npm](https://img.shields.io/npm/v/dnd5e.js.svg?maxAge=2592000)](https://www.npmjs.com/package/dnd5e.js) [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/github/jokeyrhyme/dnd5e.js?branch=master&svg=true)](https://ci.appveyor.com/project/jokeyrhyme/dnd5e.js) [![Travis CI Status](https://travis-ci.org/jokeyrhyme/dnd5e.js.svg?branch=master)](https://travis-ci.org/jokeyrhyme/dnd5e.js) [![npm](https://img.shields.io/npm/v/dnd5e.svg?maxAge=2592000)](https://www.npmjs.com/package/dnd5e)
+
 modern JavaScript implementations of formulae useful for Dungeons &amp; Dragons 5th Edition

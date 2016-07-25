@@ -1,0 +1,32 @@
+{
+  "name": "dnd5e",
+  "description": "modern JavaScript implementations of formulae useful for Dungeons &amp; Dragons 5th Edition",
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/dnd5e.js/issues"
+  },
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "fixpack": "^2.3.1"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  },
+  "homepage": "https://github.com/jokeyrhyme/dnd5e.js#readme",
+  "keywords": [],
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/dnd5e.js.git"
+  },
+  "scripts": {
+    "eslint": "eslint --fix --cache .",
+    "fixpack": "fixpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
