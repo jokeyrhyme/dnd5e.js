@@ -1,5 +1,3 @@
-// @flow
-
 const test = require('ava')
 
 const { proficiencyBonus } = require('../index.js')
