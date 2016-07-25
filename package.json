@@ -33,5 +33,9 @@
     "nyc": "nyc check-coverage --branches 90 --functions 90 --lines 90 --statements 90",
     "posttest": "npm run eslint && npm run fixpack",
     "test": "npm run ava && npm run nyc"
+  },
+  "dependencies": {
+    "lodash.fill": "^3.3.7",
+    "lodash.flatten": "^4.3.0"
   }
 }
