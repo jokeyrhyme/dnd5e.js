@@ -5,6 +5,11 @@
   "bugs": {
     "url": "https://github.com/jokeyrhyme/dnd5e.js/issues"
   },
+  "dependencies": {
+    "iterall": "^1.0.2",
+    "lodash.fill": "^3.3.7",
+    "lodash.flatten": "^4.3.0"
+  },
   "devDependencies": {
     "ava": "^0.15.2",
     "eslint": "^3.1.1",
@@ -30,12 +35,8 @@
     "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "nyc": "nyc check-coverage --branches 90 --functions 90 --lines 90 --statements 90",
+    "nyc": "nyc check-coverage --branches 50 --functions 90 --lines 90 --statements 90",
     "posttest": "npm run eslint && npm run fixpack",
     "test": "npm run ava && npm run nyc"
-  },
-  "dependencies": {
-    "lodash.fill": "^3.3.7",
-    "lodash.flatten": "^4.3.0"
   }
 }
