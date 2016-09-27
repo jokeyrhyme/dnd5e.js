@@ -38,15 +38,21 @@ test('tailClasses', (t) => {
 test('tailClasses, sortClassesByHitDie', (t) => {
   const fixtures = [
     { classes: [ { class: 'WIZARD', level: 3 } ], expected: [ 'WIZARD', 'WIZARD' ] },
-    { classes: [
-      { class: 'FIGHTER', level: 2 },
-      { class: 'WIZARD', level: 2 }
-    ], expected: [ 'WIZARD', 'WIZARD', 'FIGHTER' ] },
-    { classes: [
-      { class: 'FIGHTER', level: 2 },
-      { class: 'WIZARD', level: 2 },
-      { class: 'ROGUE', level: 1 }
-    ], expected: [ 'WIZARD', 'WIZARD', 'ROGUE', 'FIGHTER' ] }
+    {
+      classes: [
+        { class: 'FIGHTER', level: 2 },
+        { class: 'WIZARD', level: 2 }
+      ],
+      expected: [ 'WIZARD', 'WIZARD', 'FIGHTER' ]
+    },
+    {
+      classes: [
+        { class: 'FIGHTER', level: 2 },
+        { class: 'WIZARD', level: 2 },
+        { class: 'ROGUE', level: 1 }
+      ],
+      expected: [ 'WIZARD', 'WIZARD', 'ROGUE', 'FIGHTER' ]
+    }
   ]
   fixtures.forEach(({ classes, expected }) => {
     const result = tailClasses({ classes })

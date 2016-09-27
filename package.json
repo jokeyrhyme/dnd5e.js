@@ -11,13 +11,13 @@
     "lodash.flatten": "^4.3.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
-    "eslint": "^3.1.1",
-    "eslint-config-standard": "^5.3.5",
+    "ava": "^0.16.0",
+    "eslint": "^3.5.0",
+    "eslint-config-standard": "^6.1.0",
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-standard": "^2.0.0",
     "fixpack": "^2.3.1",
-    "nyc": "^6.0.0"
+    "nyc": "^8.3.0"
   },
   "engines": {
     "node": ">=6",
@@ -35,7 +35,7 @@
     "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "nyc": "nyc check-coverage --branches 50 --functions 90 --lines 90 --statements 90",
+    "nyc": "nyc check-coverage --branches 40 --functions 90 --lines 90 --statements 90",
     "posttest": "npm run eslint && npm run fixpack",
     "test": "npm run ava && npm run nyc"
   }
