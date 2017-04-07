@@ -2,6 +2,7 @@
   "name": "dnd5e",
   "description": "modern JavaScript implementations of formulae useful for Dungeons &amp; Dragons 5th Edition",
   "version": "0.1.0",
+  "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "bugs": {
     "url": "https://github.com/jokeyrhyme/dnd5e.js/issues"
   },
@@ -11,13 +12,18 @@
     "lodash.flatten": "^4.3.0"
   },
   "devDependencies": {
-    "ava": "^0.18.0",
-    "eslint": "^3.5.0",
-    "eslint-config-standard": "^7.0.2",
-    "eslint-plugin-promise": "^3.0.0",
-    "eslint-plugin-standard": "^2.0.0",
+    "ava": "^0.19.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "fixpack": "^2.3.1",
     "nyc": "^10.0.0"
+  },
+  "directories": {
+    "test": "test"
   },
   "engines": {
     "node": ">=6",
@@ -35,8 +41,9 @@
     "ava": "nyc ava",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "nyc": "nyc check-coverage --branches 40 --functions 90 --lines 90 --statements 90",
-    "posttest": "npm run eslint && npm run fixpack",
+    "nyc": "nyc check-coverage",
+    "posttest": "npm run eslint",
+    "pretest": "npm run fixpack",
     "test": "npm run ava && npm run nyc"
   }
 }
